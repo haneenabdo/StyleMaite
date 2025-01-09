@@ -25,7 +25,7 @@ const AddWardrobeItem = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await API.post('/add', formData);
+            const response = await API.post('api/wardrobe/add', formData);
             console.log('Item added:', response.data);
             alert('Wardrobe item added successfully!');
             // Clear form after successful submission

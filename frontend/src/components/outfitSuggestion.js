@@ -20,7 +20,7 @@ const OutfitSuggestion = ({ userId }) => {
     useEffect(() => {
         const fetchWeather = async () => {
             try {
-                const response = await API.get(`/suggest-outfit/${userId}`);
+                const response = await API.get(`/api/wardrobe/suggest-outfit/${userId}`);
                 console.log('API Response:', response.data);
                 setWeather(response.data.weather);
                 setSuggestions({});
@@ -37,7 +37,7 @@ const OutfitSuggestion = ({ userId }) => {
 
     const handleGenerateSuggestions = async () => {
         try {
-            const response = await API.get(`/suggest-outfit/${userId}`);
+            const response = await API.get(`/api/wardrobe/suggest-outfit/${userId}`);
             const wardrobe = response.data.suggestion;
             const season = response.data.weather.season;
             const newSuggestions = {};

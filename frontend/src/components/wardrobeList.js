@@ -9,7 +9,7 @@ const WardrobeList = ({ userId }) => {
     useEffect(() => {
         const fetchWardrobe = async () => {
             try {
-                const response = await API.get(`/${userId}`);
+                const response = await API.get(`/api/wardrobe/${userId}`);
                 setWardrobe(response.data);
             } catch (err) {
                 console.error(err);
