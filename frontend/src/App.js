@@ -27,7 +27,6 @@ const WelcomePage = () => {
                 textAlign: 'center',
                 mt: 0,
                 p: 3,
-                backgroundImage: `url('/images/clothing-pattern.png')`,
                 backgroundSize: 'cover',
                 backgroundAttachment: 'fixed',
                 minHeight: '100vh',
