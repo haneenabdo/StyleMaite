@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import API from '../api';
 import './outfitSuggestion.css';
-import { Box, Typography, Card, CardContent, Button, Grid2, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Box, Typography, Card, CardContent, Button, Grid, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
 const OutfitSuggestion = ({ userId }) => {
     const [weather, setWeather] = useState(null);
@@ -139,9 +139,9 @@ const OutfitSuggestion = ({ userId }) => {
                     <MenuItem value="General">General</MenuItem>
                 </Select>
             </FormControl>
-            <Grid2 container spacing={2} sx={{ maxWidth: '500px', mb: 3 }}>
+            <Grid container spacing={2} sx={{ maxWidth: '500px', mb: 3 }}>
                 {Object.entries(categories).map(([category, isSelected]) => (
-                    <Grid2 item xs={6} sm={4} key={category}>
+                    <Grid item xs={6} sm={4} key={category}>
                         <Button
                             variant="outlined"
                             sx={{
@@ -163,9 +163,9 @@ const OutfitSuggestion = ({ userId }) => {
                         >
                             {category}
                         </Button>
-                    </Grid2>
+                    </Grid>
                 ))}
-            </Grid2>
+            </Grid>
             <Button
                 onClick={handleGenerateSuggestions}
                 variant="contained"

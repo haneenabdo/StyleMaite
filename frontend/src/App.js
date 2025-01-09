@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import AddWardrobeItem from '/Users/Haneen/Desktop/StyleMaite/frontend/stylemaite-app/src/components/addWardrobeItem.js';
-import OutfitSuggestion from '/Users/Haneen/Desktop/StyleMaite/frontend/stylemaite-app/src/components/outfitSuggestion';
-import WardrobeList from '/Users/Haneen/Desktop/StyleMaite/frontend/stylemaite-app/src/components/wardrobeList';
+import AddWardrobeItem from './components/addWardrobeItem';
+import OutfitSuggestion from './components/outfitSuggestion';
+import WardrobeList from './components/wardrobeList';
 import './components/welcomPage.css';
 import './global.css';
 import { Box, Typography, Button, Grid, Card, CardContent } from '@mui/material';
