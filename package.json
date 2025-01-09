@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client": "cd frontend && npm start",
-    "build": "npm run build",
     "dev": "nodemon backend/server.js"
   },
   "dependencies": {
